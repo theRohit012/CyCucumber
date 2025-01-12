@@ -16,3 +16,10 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import 'cypress-mochawesome-reporter/register'
+
+// Close the browser after each scenario
+afterEach(() => {
+    cy.window().then((win) => {
+        win.close()
+    })
+})

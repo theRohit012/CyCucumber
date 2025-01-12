@@ -21,3 +21,15 @@ Then("I verify the {string} element on HomePage", (element) => {
 Then("I verify following link text in Header", (data) => {
     homePage.verifyNavigationLinks(data)
 })
+
+Then("{int} product is displayed in search result", (productCount) => {
+    homePage.verifyProductCountOnSearchResult(productCount)
+})
+
+Then("I verify the {string} product section on HomePage", (product) => {
+    homePage.verifyProduct(product)
+})
+
+Then("I am adding {string} product with quantity {int} to cart", (productName, quantity) => {
+    homePage.addProductToCart(productName, quantity)
+})
