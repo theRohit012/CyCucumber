@@ -22,7 +22,7 @@ Feature: Verify homePage functionalites
             | searchValue | searchResults |
             | Cucumber    | 1             |
 
-    Scenario Outline: Add to cart functionality
+    Scenario Outline: Add To cart functionality
         When I enter "<searchValue>" in searchBox
         Then I am adding "<searchValue>" product with quantity <quantity> to cart
         Examples:
